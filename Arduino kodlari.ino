@@ -1,22 +1,21 @@
 #include <SoftwareSerial.h>
 SoftwareSerial veri_kontrol(0,1);
 int led = 13;     // ledin bağladığı pin dahili pin ile beraber çalışır
-int buton = A1;
-int motor_pin = 9;
-char veri;
+int motor_pin = 9;  // Motor pini tanımlanıyor
+char veri;   // veri türü tanımlanıyor
 
 
 void setup() {
-Serial.begin(9600);         // Seri Bağlantı Hızı
+Serial.begin(9600);         // Seri Bağlantı Hızı ayarlanıyor
 veri_kontrol.begin(9600);
 pinMode(led, OUTPUT);  // led pinini çıkış olarak ayarlıyoruz
-pinMode(motor_pin, OUTPUT);
+pinMode(motor_pin, OUTPUT);     // motor pini çıkış olarak ayarlanıyor
 
 }
 
 void loop() {
   veri=veri_kontrol.read();  // Bluetoothdan gelen veri veri degiskenine atandi
-  delay(50);
+  delay(50);           // 50 ms gecikme konuluyor
   switch (veri)
   {
     case '1':                             //Akdeniz Mancar
