@@ -1,6 +1,6 @@
-# Farmer
+# Farmer Assistant
 
-# Farmer
+
 Lisans eğitimi sürecinde bitirme projesi olarak hazırlanmış bir projedir. Elektronik kısmın kodlaması arduino üzerinden yapılmıştır. Mobil uygulama üzerinden elektronik devreye bağlantı sağlanarak yetiştirilmek istenilen ürün seçilir. Ürün için gerekli sulama miktarı arduino içerisine eklenmiştir. Seçilen ürüne göre sulama otomatik başlayacaktır. 
 
 Projenin elektronik şeması şekildeki gibidir.
